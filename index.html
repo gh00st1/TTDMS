@@ -1,0 +1,107 @@
+<html>
+  <!--.-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./static/css/stylish.css">
+
+    <title>T#TDMS</title>
+  
+  </head>
+  <body>
+    <main-container> <!-- not an official tag -->
+    
+    <!-- NavBar -->
+    <header>
+      <nav>
+        <p class="title">The #ToDo Mangement System</p>
+        <a class="navb-link" href="#tasks">Tasks</a>
+        <a class="navb-link" href="#add-task">Add task</a>
+        <a class="navb-link" href="#meetings">Meetings</a>
+      </nav>
+    </header>
+    
+    <!-- Task list -->
+    <!-- Should be dynamic (e.g. with PHP) -->
+    <!-- with the task adder's name and with priorities -->
+    <div class="tasks" id="tasks">
+      <section>
+        
+        <h1>Tasks</h1>
+        
+        <div class="task">
+          <p class="name">Create home page main design</p>
+          <p class="priority urgent">!Urgent</p>
+          
+          <div class="editing">
+            <a href="#">Change priority</a>
+            <a href="#">Edit</a>
+            <a href="#">Remove</a>
+          </div>
+          <p class="added-by">added by Joker (K nabel)</p>
+        </div>
+        
+        <div class="task">
+          <p class="name">Make the son of "nabel" learn node.js</p>
+          <p class="priority low">!Low priority</p>
+          
+          <div class="editing">
+            <a href="#">Change priority</a>
+            <a href="#">Edit</a>
+            <a href="#">Remove</a>
+          </div>
+          <p class="added-by">added by KWael (K wael)</p>
+        </div>
+        
+        <div class="task">
+          <p class="name">Setup a meeting soon</p>
+          <p class="priority medium">!Medium priority</p>
+          
+          <div class="editing">
+            <a href="#">Change priority</a>
+            <a href="#">Edit</a>
+            <a href="#">Remove</a>
+          </div>
+          <p class="added-by">added by GeHa (K wageh)</p>
+        </div>
+      </section>
+      
+    </div>
+    
+    <!-- add task -->
+    <div class="add-task" id="add-task">
+      
+      <h2>
+        Add task
+      </h2>
+      <form action="index.php" method="post" accept-charset="utf-8">
+        
+        <label for="task">Task to add:</label>
+        <input type="text" name="task" id="task" value="" placeholder="write task..." />
+        
+        <label for="username">Your username:</label>
+        <input type="text" name="username" id="username" value="" placeholder="the person adding the task..." />
+        
+        <label for="password">Your secure password:</label>
+        <input type="text" name="password" id="password" value="" placeholder="password..." />
+        
+        <input type="submit" name="add" id="add-btn" class="add-btn" value="Add" />
+      </form>
+    </div>
+    
+    <!-- Meetings management, more to be added -->
+    <div class="meetings" id="meetings">
+      <h2>Next meeting: <br><span class="meeting-name">"Discussing the finished UI/UX design"</span>,<br>At 2024-02-04 03:02pm (expected time.)</h2>
+      
+      <a href="#">Add meeting</a>
+    </div>
+    
+    <footer>
+      &copy; all rights reserved
+    </footer>
+    
+    </main-container>
+  </body>
+</html>

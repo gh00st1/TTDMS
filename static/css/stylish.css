@@ -1,0 +1,131 @@
+/* global */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #EAEAE6;
+  font-family: Sans-Serif;
+}
+
+a {
+  text-decoration: none;
+}
+h1, h2 {
+  background-color: #393832;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* NavBar */
+
+nav {
+  background-color: #008caf;
+  padding: 5px 5px 20px 5px;
+}
+
+nav .title {
+  display: block;
+  font-family: Monospace;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f4f4f4;
+}
+nav .navb-link {
+  color: #b5fff6;
+  font-size: 19px;
+  padding: 3px 5px 7px 5px;
+  background-color: #006c88;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Tasks */
+
+.tasks, .add-task, .meetings {
+  background-color: #FFFFFF;
+  padding: 5px 20%;
+  border-radius: 3px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.task {
+  border-bottom: #9ab8c3 2px solid;
+}
+.task .name {
+  font-size: 30px;
+}
+.urgent {
+  color: #c20000;
+}
+.medium {
+  color: #cc7f00;
+}
+.low {
+  color: #0023cc;
+}
+.editing a, .meetings a {
+  padding: 2px 6px;
+  color: #e5ecff;
+  background-color: #5f6374;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.added-by {
+  color: rgb(77,89,116);
+  font-size: 12px;
+}
+
+/* Add task */
+
+form label {
+  display: block;
+  padding: 10px 0;
+}
+form input {
+  display: block;
+  margin: 0 auto;
+  padding: 2px 15px;
+}
+.add-btn {
+  margin: 10px auto 0 auto;
+  
+}
+
+/* Meetings management, to be finalized */
+
+.meetings {
+  padding: 25px 20%;
+}
+
+.meetings .meeting-name {
+  color: red;
+}
+
+/* footer */
+
+footer {
+  margin: 5px 0 0 0;
+  padding: 0 0 5px 0;
+}
+
+/* media q  */
+
+@media (max-width: 364px) {
+  nav .title {
+    font-size: 19px;
+  }
+  nav .navb-link {
+    font-size: 16px;
+  }
+  .task .name {
+  font-size: 16px;
+  }
+  form label {
+  padding: 10px 0;
+  }
+  form input {
+  padding: 2px 2px;
+  width: 150px;
+}
+}
